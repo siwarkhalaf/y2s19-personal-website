@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  float: left;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #f1f1f1;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+	<center> <h3>here is some photos of mine!</h3></center>
+	
+
+
+	<!--<img src="careeza.jpg">
+	<img src="burano.jpg">
+	<img src="italy.jpg">
+	<img src="france.jpg">
+	<img src="glowstick.jpg">
+	<img src="byphone.jpg">
+	<img src="blue.jpg">
+	<img src="rainbow.jpg">
+	<img src="graduation.jpg">
+	<img src="ramadan.jpg">
+	<img src="banaflower.jpg">
+	<img src="tala.jpg">
+	<img src="sparkle.jpg">
+	<img src="sunflower.jpg">-->
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="careeza.jpg" alt="careeza" style="width:350px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Careeza Lake</h1> 
+      <p>Italy, 10/07/2k19</p> 
+      <p>Shines like diamonds!</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="burano.jpg" alt="burano" style="width:300px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Burano</h1> 
+      <p>Italy, 11/07/2k19</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="italy.jpg" alt="italy" style="width:350px;height:268px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Italy, 09/07/2k19</h1> 
+      <p></p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="france.jpg" alt="france" style="width:350px;height:280px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>France</h1> 
+      <p>2017</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="glowstick.jpg" alt="glowstick" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p>It's OK to be a glowstick, sometimes we need to break before we shine!</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="byphone.jpg" alt="byphone" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <h3> #Taken_by_phone </h3> 
+      <p>The eye of the photographer is the base, and the camera is just a way!</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="blue.jpg" alt="blue" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p> </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="rainbow.jpg" alt="rainbow" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p> She wears black, but she has the most colorful mind! </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="graduation.jpg" alt="graduation" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p> Congratiolations </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="ramadan.jpg" alt="ramadan" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p>  </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="banaflower.jpg" alt="banaflower" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p> </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="tala.jpg" alt="tala" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p> </p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="sparkle.jpg" alt="sparkle" style="width:350px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <p>you sparkle the most when you are happy!</p> 
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="sunflower.jpg" alt="sunflower" style="width:350px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <p> 25/06/2k19S</p> 
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
